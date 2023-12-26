@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bowab.api:
+    image: ${DOCKER_REGISTRY-}bowabapi
+    build:
+      context: .
+      dockerfile: Bowab.Api/Dockerfile
